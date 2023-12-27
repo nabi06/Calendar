@@ -1,0 +1,85 @@
+
+.btn{
+
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  margin: 5px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+
+/* .calendar button:hover {
+  background-color: #0056b3;
+} */
+
+.calendar-grid {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr); /* 7 days for a week */
+  gap: 5px;
+  margin-top: 20px;
+  max-width: fit-content;
+  border: 1px solid black;
+  padding: 10px;
+}
+
+.calendar-day {
+  max-width: auto;
+  max-height: 50px;
+  min-height: 50px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.calendar-days{
+  background-color: #78c9f1;
+  max-width: 60px;
+  max-height: auto;
+  min-height: 50px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.calendar-day:hover {
+  background-color: #e9ecef;
+}
+
+.calendar-day.empty {
+  background-color: #fff;
+}
+.calendar-day .selected {
+  background-color: #78c9f1; /* or any highlight color */
+  color: white;
+}
+.darkMode{
+  background-color: gray;
+  
+}
+.lightMode{
+  background-color: whitesmoke;
+}
+.to-do{
+  position: absolute;
+  top: 0;
+  left: 70%;
+  border: 1px solid black;
+  width: auto;
+  max-width: fit-content;
+  height: auto;
+  max-height: fit-content;
+  padding: 10px;
+
+}
